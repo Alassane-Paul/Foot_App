@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.css');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: url("../images/font1.jpg") no-repeat center center/cover fixed;
+    color: #fff;
+}
+
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .top-bar {
+            padding: 10px 20px;
+            background-color: #222;
+            color: white;
+        }
+        .top-bar img {
+            border-radius: 8px;
+        }
+        .right {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        /* --- Burger Menu --- */
+        .burger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px;
+            transition: 0.3s;
+        }
+
+        /* --- Responsive --- */
+        @media screen and (max-width: 768px) {
+            .right {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                background: #222;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .right.show {
+                display: flex;
+            }
+            .burger {
+                display: flex;
+            }
+        }
+
+.main{
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnblue {
+    color: blue;
+    &:active{
+        border: none;
+    }
+}
+
+.title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.auth {
+    border: none;
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+    .indiq .btn{
+        width: 650px;
+        padding: 25px;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+    
+}
+
+.indiq{
+    text-align: center;
+}
+
+.input-group-text {
+    width: 200px;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        
+    }
+}
+
+.input-group{
+    width: 700px;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.form{
+    width: fit-content;
+    margin: auto;
+}
+
+.grd {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.grdbtn {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    div .btn {
+        width: 200px;
+        height: 70px;
+        align-content: center;
+    }
+    
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fr2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.joueur {
+    padding: 3px;
+    margin: 3px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
